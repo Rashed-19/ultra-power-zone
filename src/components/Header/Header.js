@@ -13,6 +13,7 @@ const Header = () => {
 </div>
            
           </div>
+          <p className='text-2xl text-left ml-4 mt-4 text-green-500'>Exercise list</p>
         </div>
     );
 };
