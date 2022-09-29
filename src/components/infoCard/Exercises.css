@@ -1,32 +1,41 @@
 .exercise-container{
     display: grid;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 2fr 1fr;
     margin: 0 auto;
 }
 .exercise{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap:15px;
-    color: rgb(229, 25, 25);
     margin-top: 50px;
     margin-right: 30px;
+
 }
 @media only screen and (max-width: 700px) {
     .exercise-container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        margin: 0 auto;
+        justify-items: center;
     }
-
-    .exercise {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-  }
-
-  @media only screen and (max-width: 600px) {
     .exercise{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        padding: 18px 28px;
+        margin: 0 auto;
+    }
+
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .exercise{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 28px 45px;
     }
   }
+  @media only screen and (max-width: 1500px){
+    .exercise{
+        display: block;
+        margin: 0 20px;
+  }
+}
