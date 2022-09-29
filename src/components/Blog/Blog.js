@@ -15,7 +15,7 @@ const Blog = () => {
 
 <div tabindex="0" class="collapse collapse-arrow border-2 border-rose-500 bg-base-100 rounded-box mt-3">
   <div class="collapse-title text-xl font-medium">
-  Props vs State
+ What's the difference between Props and States
   </div>
   <div class="collapse-content"> 
     <p>State are mutable but props are immutable. You can define states in the component itself on the other hand you can pass properties from parent components. The state is set and update by the object (view) and props determine the view upon creation, and then they remain static. Props sends data to one component to other component. And state keep data on its own component. Props makes components suitable for reuse. But states can’t makes components suitable for reuse.</p>
@@ -23,10 +23,11 @@ const Blog = () => {
 </div>
 <div tabindex="0" class="collapse collapse-arrow border border-2 border-rose-500 bg-base-100 rounded-box mt-3">
   <div class="collapse-title text-xl font-medium">
-
+  What are the uses of useEffect except data load?
   </div>
   <div class="collapse-content"> 
-    <p></p>
+ 
+    <p>Validating an input while it's receiving characters is another great application for useEffect.We can use useEffect to filter an array "on the fly" by typing letters into an input element. We can use the useEffect hook to trigger an animation on a shopping cart as a side effect of adding a new product to it.</p>
   </div>
 </div>
             </div>

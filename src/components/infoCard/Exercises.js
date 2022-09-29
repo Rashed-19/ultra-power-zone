@@ -21,18 +21,28 @@ const Exercises = () => {
 
   
     const addToDetail = (exercise) => {
-      console.log(exercise)
+
       let newCart = []
       newCart = [...addedExercise, exercise] 
       setAddedExercise(newCart)
   }
 
+
+
+
   const mySum = (prev , current) => { 
-    return prev + current.time
+
+    const time = prev + current.time
+
+    console.log(time);
+
+    return time
+
 }
 
-  const total = addedExercise.reduce(mySum, 0)
+ const total = addedExercise.reduce(mySum,0)
 
+ console.log(total);
   const clickedBtn = (breakTime) => { 
    addToStorage(breakTime.btn)
     setBreakTime(breakTime.btn)
