@@ -1,6 +1,16 @@
 import React from 'react';
 
-const ExerciseDetails = ({ total, saveBreakTime }) => {
+const ExerciseDetails = ({ addedExercise, saveBreakTime }) => {
+    
+
+    let total = 0;
+
+    for(const exercises of addedExercise){
+
+        total = total + parseInt(exercises.time)
+    }
+    
+    
     return (
         <div>
             <div>
@@ -9,7 +19,7 @@ const ExerciseDetails = ({ total, saveBreakTime }) => {
 <div className='flex'>
     <h2 className='text-xl font-bold mt-5'>Exercise Time: </h2>
     <small className='text-xl  mt-5'>
-    {total}  Minutes
+    {total}Minutes
     </small>
 </div>
 

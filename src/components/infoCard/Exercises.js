@@ -13,13 +13,16 @@ const Exercises = () => {
     const [addedExercise, setAddedExercise] = useState([]);
     const [saveBreakTime, setBreakTime]  = useState(0)
 
+    //load data
+
     useEffect(() =>{
         fetch('infoCard.json')
         .then(res => res.json())
         .then(data => setExercises(data));
     },[]);
 
-  
+
+  //details
     const addToDetail = (exercise) => {
 
       let newCart = []
@@ -27,22 +30,6 @@ const Exercises = () => {
       setAddedExercise(newCart)
   }
 
-
-
-
-  const mySum = (prev , current) => { 
-
-    const time = prev + current.time
-
-    console.log(time);
-
-    return time
-
-}
-
- const total = addedExercise.reduce(mySum,0)
-
- console.log(total);
   const clickedBtn = (breakTime) => { 
    addToStorage(breakTime.btn)
     setBreakTime(breakTime.btn)
@@ -55,12 +42,12 @@ useEffect(() => {
   }
 }, []);
 
+ //toast
     const notify = () => toast("Congratulation you complete the exercise successfully!");
 
     return (
         <div>
          <div className='exercise-container'>
-
             <div>
       
       
@@ -73,22 +60,16 @@ useEffect(() => {
 </div>        
  </div>
 
-
- <div className= ' border-2 border-rose-500 ml-7 mt-5  bg-zinc-200 rounded'>
+ <div className= 'border-2 border-rose-500 ml-7 mt-5  bg-zinc-200 rounded'>
    <div>
 <div  class=" ml-7 0 mb-7 mt-3  mr-6" >
 <Info></Info>
-
 </div>
-
-
-
 <div>
   <h2 className='font-bold text-xl mb-4 text-left ml-7'>Add a Break</h2>
   <BreakTime clickedBtn={ clickedBtn}></BreakTime>
-  <ExerciseDetails total={total} saveBreakTime={saveBreakTime}></ExerciseDetails>
+  <ExerciseDetails addedExercise={addedExercise} saveBreakTime={saveBreakTime}></ExerciseDetails>
 </div>
-
 
 <div>
 <button  onClick={notify} class="btn btn-outline btn-primary border-2 border-rose-500 mb-7">Activity Complete</button>
@@ -96,14 +77,8 @@ useEffect(() => {
     </div>
    </div>
   </div>
-
- 
   <ToastContainer />
 </div>
-
-
-
-
 
     );
 };

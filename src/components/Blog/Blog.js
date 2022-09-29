@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
     return (
         <div>
-            <div className='mt-5 ml-10 mr-10 text-left'>
+            <div className='mt-5 ml-10 mb-7 mr-10 text-left'>
             <div tabindex="0" class="collapse collapse-arrow border-2 border-rose-500 bg-base-100 rounded-box">
   <div class="collapse-title text-xl font-medium">
   How reacts works
@@ -22,7 +22,7 @@ const Blog = () => {
   </div>
 </div>
 <div tabindex="0" class="collapse collapse-arrow border border-2 border-rose-500 bg-base-100 rounded-box mt-3">
-  <div class="collapse-title text-xl font-medium">
+  <div class="collapse-title text-xl font-medium mb-7">
   What are the uses of useEffect except data load?
   </div>
   <div class="collapse-content"> 
