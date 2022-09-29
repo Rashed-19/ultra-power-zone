@@ -60,9 +60,9 @@ useEffect(() => {
 </div>        
  </div>
 
- <div className= 'border-2 border-rose-500 ml-7 mt-5  bg-zinc-200 rounded'>
+ <div className= 'border-2 border-rose-500  mt-5  bg-zinc-200 rounded'>
    <div>
-<div  class=" ml-7 0 mb-7 mt-3  mr-6" >
+<div  class=" ml-7  mb-7 mt-3  mr-6" >
 <Info></Info>
 </div>
 <div>

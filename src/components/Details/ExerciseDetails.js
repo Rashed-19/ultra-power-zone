@@ -19,7 +19,7 @@ const ExerciseDetails = ({ addedExercise, saveBreakTime }) => {
 <div className='flex'>
     <h2 className='text-xl font-bold mt-5'>Exercise Time: </h2>
     <small className='text-xl  mt-5'>
-    {total}Minutes
+    {total} seconds
     </small>
 </div>
 

@@ -9,7 +9,7 @@ const Exercise = ({exercise,addToDetail}) => {
             <div>
     
 <div class="card w-64 border-2 border-rose-500 bg-base-100 shadow-xl mt-5">
-  <figure><img style={{width:"150px" , height:"150px"}} src={img} alt="" /></figure>
+  <figure><img className='mt-5 rounded max-w-sm' style={{width:"150px" , height:"150px"}} src={img} alt="" /></figure>
   <div class="card-body">
     <h2 class="text-center font-bold text-xl">{name}</h2>
     <p  class="text-center">Time: {time}</p>

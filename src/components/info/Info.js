@@ -31,12 +31,12 @@ const Info = () => {
    </div>
    
 
-   <div style={{height:'100px'}}  class="card w-75 ml-7 border-2 border-rose-500 bg-zinc-300 mb-7 mt-3 ml-7 mr-6" >
+   <div style={{height:'120px'}}  class="card   border-2 border-rose-500 bg-zinc-300 mb-7 mt-3 ml-7 mr-6" >
   <div class="card-body  ">
   
 <div className='flex items-center justify-center space-x-10 text-center'>
 <div>
-    <p><span className='font-bold text-xl'>69 </span><small>kg</small><br></br>
+    <p><span className='font-bold text-xl'>69</span>kg<br></br>
     <small>Weight</small></p>
 </div>
 
@@ -46,9 +46,9 @@ const Info = () => {
     </div>
 
 <div
-><p><span className='font-bold text-xl'>26 </span><small>yrs
-        </small>
-        <br></br><small>Age</small></p>
+><p><span className='font-bold text-xl'>26</span>yrs
+<br></br><small>Age</small></p>
+
 </div>
 
 </div>
