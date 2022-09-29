@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Exercise from './Exercise';
 import'./Exercises.css';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Exercises = () => {
 
@@ -12,7 +14,7 @@ const Exercises = () => {
         .then(res => res.json())
         .then(data => setExercises(data));
     },[]);
-
+    const notify = () => toast("Congratulation you complete the exercise successfully!");
 
     return (
         <div>
@@ -35,7 +37,7 @@ const Exercises = () => {
 
             </div>
 
-            <div className=''>
+            <div className='bg-zinc-200'>
  
               <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 '> 
               <div class="avatar">
@@ -78,19 +80,22 @@ const Exercises = () => {
 
 </div>
     
-   
-    
     <div class="card-actions justify-end">
   
     </div>
   </div>
 </div>
 
+{/* button */}
+<div>
+<button  onClick={notify} class="btn btn-outline btn-success">Activity Complete</button>
+</div>
     </div>
             </div>
 
 
   </div>
+  <ToastContainer />
 </div>
 
 
