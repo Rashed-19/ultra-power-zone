@@ -1,12 +1,10 @@
 import React from 'react';
-import { faDumbbell} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../../image/logo.png'
 
 const Header = () => {
     return (
         <div>
-          <div className='text-left mt-5 flex ml-7'>
+          <div className='text-left mt-5 flex ml-5'>
 <div>
   <img style={{height:'90px'}} src={logo} alt="" />
 </div>
