@@ -4,7 +4,7 @@ import logo from '../../image/logo.png'
 const Header = () => {
     return (
         <div>
-          <div className='text-left mt-5 flex ml-5'>
+          <div className='text-left mt-5 flex '>
 <div>
   <img style={{height:'90px'}} src={logo} alt="" />
 </div>
