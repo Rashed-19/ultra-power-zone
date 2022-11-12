@@ -4,7 +4,7 @@ import'./Exercises.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ExerciseDetails from '../Details/ExerciseDetails';
-import {addToStorage, storageExercise } from '../Stroage/Stroage';
+import {storageAdded, storageExercises } from '../Stroage/Stroage';
 import BreakTime from '../Break/BreakTime';
 import Info from '../info/Info';
 const Exercises = () => {
@@ -16,7 +16,7 @@ const Exercises = () => {
     //load data
 
     useEffect(() =>{
-        fetch('infoCard.json')
+        fetch('information.json')
         .then(res => res.json())
         .then(data => setExercises(data));
     },[]);
@@ -31,23 +31,23 @@ const Exercises = () => {
   }
 
   const clickedBtn = (breakTime) => { 
-   addToStorage(breakTime.btn)
+   storageAdded(breakTime.btn)
     setBreakTime(breakTime.btn)
 }
 
 useEffect(() => {
-  const savedData = storageExercise()
+  const savedData = storageExercises()
   for (const key in savedData) {
       setBreakTime(key)
   }
 }, []);
 
- //toast
-    const notify = () => toast("Congratulation you complete the exercise successfully!");
+
+    const notify = () => toast("Congratulation!");
 
     return (
         <div>
-         <div className='exercise-container'>
+         <div className='container'>
             <div>
       
       
@@ -60,7 +60,7 @@ useEffect(() => {
 </div>        
  </div>
 
- <div className= 'border-2 border-rose-500  mt-5  bg-zinc-200 rounded'>
+ <div className= 'mt-5  bg-white rounded'>
    <div>
 <div  class=" ml-7  mb-7 mt-3  mr-6" >
 <Info></Info>
@@ -72,7 +72,7 @@ useEffect(() => {
 </div>
 
 <div>
-<button  onClick={notify} class="btn btn-outline btn-primary border-2 border-rose-500 mb-7">Activity Complete</button>
+<button  onClick={notify} class="btn  mb-7 ml-4">Activity Complete</button>
 </div>
     </div>
    </div>

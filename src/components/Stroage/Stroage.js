@@ -1,15 +1,15 @@
-const addToStorage = id => {
+const storageAdded = id => {
     
-    //clear localStorage
+ 
     localStorage.removeItem('save-Exercise');
     let storage= {};
 
-    //add exercise localStorage
+    
     storage[id] = 1;
     localStorage.setItem('save-Exercise', JSON.stringify(storage));
 }
 
-const storageExercise = () => {
+const storageExercises = () => {
     
     let storage= {}
     const storedCart = localStorage.getItem('save-Exercise');
@@ -18,4 +18,4 @@ const storageExercise = () => {
     }
     return storage;
 }
-export {addToStorage, storageExercise};
+export {storageAdded, storageExercises};

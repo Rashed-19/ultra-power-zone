@@ -1,0 +1,40 @@
+[
+    {
+      "id": "01",
+      "name":"Dumbbell romanian deadlift",
+      "time":"60s" ,
+      "img":""
+    },
+    {
+      "id": "02",
+      "name":"Kettlebell swing",
+      "time":"40s" ,
+      "img":""
+    },
+    {
+      "id": "03",
+      "name":"Back squat",
+      "time":"30s" ,
+      "img":""
+    },
+    {
+      "id": "04",
+      "name":"Bench Press",
+      "time":"50s" ,
+      "img":""
+    },
+    {
+      "id": "5",
+      "name":"Push-ups",
+      "time":"40s" ,
+      "img":""
+    },
+    {
+      "id": "06",
+      "name":"Pullup",
+      "time":"40s" ,
+      "img":""
+    }
+
+
+]

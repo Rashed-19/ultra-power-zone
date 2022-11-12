@@ -4,7 +4,7 @@ const BreakTime = ({ clickedBtn }) => {
     const buttons = [10, 20, 30, 40, 50]
     return (
         <div>
-             <div className='break-btn ml-3 mr-3 border-2 border-rose-500'>
+             <div className='btn ml-3 mr-3  '>
             {buttons.map(btn => <button onClick={() => clickedBtn({ btn })}>{btn}</button>)}
         </div>
         </div>
